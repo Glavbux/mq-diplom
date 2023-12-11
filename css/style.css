@@ -147,7 +147,7 @@ a {
   background-repeat: no-repeat;
   z-index: 0;
   padding: 157px 20px 20px 20px;
-  max-width: 25%;
+  width: 25%;
 }
 
 .trend__garden {
@@ -209,6 +209,7 @@ a {
 .content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .contant__row {
@@ -218,7 +219,6 @@ a {
 }
 
 .main__news {
-  padding-left: 15px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -309,11 +309,12 @@ a {
 
 .main__sub-news {
   max-width: 286px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sub-new__title {
   margin-top: -5px;
-  padding-right: 8px;
   margin-bottom: 42px;
 }
 
@@ -352,7 +353,6 @@ a {
 }
 
 .sub-new__box {
-  padding-right: 14px;
   padding-left: 9px;
   margin-top: -8px;
   box-sizing: border-box;
@@ -428,7 +428,6 @@ a {
 
 .newsletter__title {
   margin-bottom: 36px;
-  padding-right: 20px;
 }
 
 .newsletter__form__mail {
@@ -443,7 +442,6 @@ a {
   text-transform: uppercase;
   cursor: pointer;
   min-width: 272px;
-  padding: 16px;
   box-sizing: border-box;
   outline: none;
   background: #b59f5b;
@@ -459,11 +457,9 @@ a {
 
 .tags__title {
   margin-bottom: 35px;
-  padding-right: 15px;
 }
 
 .tags__list {
-  margin-right: 15px;
   display: flex;
   flex-wrap: wrap;
   font-size: 12px;
@@ -495,7 +491,6 @@ a {
 
 .thems__title {
   margin-bottom: 36px;
-  padding-right: 9px;
 }
 
 .thems__list {
@@ -533,17 +528,17 @@ a {
 
 .products {
   margin: 65px 0;
-  padding: 0 15px;
 }
 
 .products__title {
   margin-bottom: 20px;
+  padding-top: 0;
 }
 
 .products__title::after {
   content: "";
   position: absolute;
-  top: 110px;
+  top: 49px;
   left: calc(50% - 48px);
   display: inline-block;
   width: 96px;
@@ -553,6 +548,7 @@ a {
 .products__row {
   display: flex;
   justify-content: space-around;
+  gap: 65px;
 }
 
 .products__product {
@@ -661,11 +657,6 @@ a {
 
 .btn:hover {
   background: #323232;
-}
-
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .social {
