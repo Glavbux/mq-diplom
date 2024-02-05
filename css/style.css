@@ -66,11 +66,13 @@ a {
 
 .menu__list {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  gap: 34px;
 }
 
 .list__item {
-  margin-left: 34px;
+  gap: 34px;
 }
 
 .list__item:first-child {
@@ -117,7 +119,7 @@ a {
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
-  padding: 60px 0 40px 0;
+  padding: 65px 0 40px 0;
 }
 
 .general::after {
@@ -133,18 +135,21 @@ a {
 .trends__row {
   position: relative;
   display: flex;
-  gap: 5px;
+  margin: 0 -5px;
   justify-content: space-between;
 }
 
 .trends__trend {
   position: relative;
+  display: flex;
+  justify-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
+  margin: 0 5px;
+  flex: 1 1 auto;
   padding: 157px 20px 20px 20px;
-  width: 25%;
 }
 
 .trend__garden {
@@ -182,8 +187,7 @@ a {
   justify-content: center;
   align-items: start;
   padding: 38px 35px 30px 35px;
-  max-width: 370px;
-  max-height: 145px;
+  max-width: 100%;
   overflow: hidden;
   border: 3px solid #8d8150;
 }
@@ -215,20 +219,14 @@ a {
   justify-content: space-between;
 }
 
-.main__news {
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
 .main__new {
   display: flex;
-  margin-bottom: 57px;
   margin-right: 120px;
 }
 
 .new__image {
   margin-right: 30px;
-  width: 380px;
+  max-width: 380px;
 }
 
 .box__links {
@@ -545,13 +543,14 @@ a {
 .products__row {
   display: flex;
   justify-content: space-around;
-  gap: 65px;
+  margin: 0 -32px;
 }
 
 .products__product {
   display: flex;
   flex-direction: column;
   max-width: 33.333%;
+  margin: 0 32px;
 }
 
 .product__image {
