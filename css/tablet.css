@@ -41,10 +41,6 @@
   border-bottom: 2px solid white;
 }
 
-.toggle {
-  display: none;
-}
-
 .toggle:checked + .header__burger + .header__menu {
   display: block;
 }
