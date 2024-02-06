@@ -1,0 +1,53 @@
+.header {
+	background: url(../images/banner-mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.header__logo {
+	padding-top: 225px;
+	min-width: 300px;
+	min-height: 36px;
+}
+.header__row {
+	flex-direction: column-reverse;
+}
+.header__burger {
+	top: 30px;
+}
+.title__text {
+	font-size: 26px;
+}
+.title__container {
+	margin-top: 0px;
+}
+.general {
+	font-size: 16px;
+}
+.new__title {
+	font-size: 16px;
+}
+.new__image {
+	display: flex;
+	margin: auto;
+}
+.new__image img {
+	max-width: 100%;
+}
+.contant__row {
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+}
+.title {
+	font-size: 16px;
+}
+
+.list__tag {
+	flex-basis: 25%;
+}
+.main__sub-news {
+	margin: auto;
+}

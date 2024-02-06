@@ -224,6 +224,7 @@ a {
 }
 
 .main__new {
+  max-width: 100%;
   display: flex;
   margin-right: 120px;
 }
