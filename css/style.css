@@ -75,10 +75,6 @@ a {
   gap: 34px;
 }
 
-.list__item {
-  gap: 34px;
-}
-
 .list__item:first-child {
   margin: 0;
 }
@@ -335,7 +331,8 @@ a {
   width: 66px;
   position: absolute;
   top: 28px;
-  right: 113px;
+  right: 50%;
+  transform: translate(50%);
 }
 
 .main__sub-new {
@@ -383,7 +380,6 @@ a {
   min-width: 100%;
   min-height: 45px;
   font-family: open sans, sans-serif;
-  margin-right: 15px;
   margin-top: 45px;
   margin-bottom: 57px;
 }
@@ -398,7 +394,7 @@ a {
   background: #f4f7f6;
   font-size: 13px;
   outline: none;
-  min-width: 272px;
+  min-width: 100%;
   padding: 16px;
   box-sizing: border-box;
 }
@@ -421,7 +417,7 @@ a {
   box-shadow: none;
   padding: 15px;
   position: absolute;
-  right: 16px;
+  right: 0px;
   top: 0px;
   z-index: 2;
 }
@@ -441,7 +437,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
-  min-width: 272px;
+  min-width: 100%;
   box-sizing: border-box;
   outline: none;
   background: #b59f5b;
@@ -466,6 +462,7 @@ a {
   font-family: open sans-bold, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  gap: 2px;
 }
 
 .list__tag {
@@ -473,8 +470,6 @@ a {
   border: 3px solid #eeeeee;
   padding: 6px 15px;
   box-sizing: border-box;
-  margin-right: 1px;
-  margin-bottom: 1px;
 }
 
 .list__tag:hover {
@@ -696,4 +691,52 @@ a {
   color: #999999;
   font-weight: bold;
   font-size: 12px;
+}
+
+.none {
+  display: none;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+}
+
+.popup__contant {
+  position: relative;
+  width: 390px;
+  height: 590px;
+  padding: 55px 30px;
+  background-color: white;
+}
+
+.popup__close {
+  position: absolute;
+  font-size: 40px;
+  top: -45px;
+  right: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.popup__title {
+  padding-top: 0;
+}
+
+.popup__title::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 48px);
+  display: inline-block;
+  width: 96px;
+  border: 3px solid #8d8150;
 }/*# sourceMappingURL=style.css.map */

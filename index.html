@@ -12,6 +12,35 @@
 
 <body>
 	<div class="wrapper">
+		<input class="none" type="checkbox" id="popup1">
+		<div class="popup">
+			<div class="popup__contant">
+				<label for="popup1" class="popup__close">&times;</label>
+				<form method="get" action="#">
+					<h2 class="popup__title general">Ваш ФИДБЕк</h2>
+					<div class="popup__survay">
+						<p class="survay__text">Как часто вы заходите на сайт?</p>
+						<select class="survay__select field">
+							<option value="" class="select__choice">Почти каждый день</option>
+							<option value="" class="select__choice">Раз в несколько дней</option>
+							<option value="" class="select__choice">Раз в несколько недель</option>
+							<option value="" class="select__choice">Несколько раз в год</option>
+						</select>
+					</div>
+					<div class="popup__radio">
+						<p class="radio__text">Вы подписаны на e-mail рассылку?</p>
+						<input type="radio" name="e-mail" value="yes" class="radio__buttons">Да</input>
+						<input type="radio" name="e-mail" value="no" class="radio__buttons">Нет</input>
+					</div>
+					<div class="textarea">
+						<p class="textarea__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+						<textarea placeholder="Может, больше рецептов?" name="content" class="textarea__content field">
+						</textarea>
+					</div>
+					<button type="submit" class="btn">Отправить</button>
+				</form>
+			</div>
+		</div>
 		<header class="header">
 			<div class="content">
 				<div class="header__row">

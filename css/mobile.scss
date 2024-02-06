@@ -23,13 +23,25 @@
 .title__container {
 	margin-top: 0px;
 }
+.main {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
 .general {
 	font-size: 16px;
 }
 .new__title {
 	font-size: 16px;
 }
+.new__box {
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
 .new__image {
+	min-width: 100%;
 	display: flex;
 	margin: auto;
 }
@@ -45,9 +57,18 @@
 	font-size: 16px;
 }
 
-.list__tag {
-	flex-basis: 25%;
-}
 .main__sub-news {
-	margin: auto;
+	max-width: 100%;
+	margin: 0 auto;
 }
+.thems__list {
+	font-size: 16px;
+}
+.products__row {
+	flex-direction: column;
+	min-width: 100%;
+}
+.products__product {
+	max-width: 100%;
+}
+
